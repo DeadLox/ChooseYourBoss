@@ -26,9 +26,10 @@ function main()
                         $endDate = calcEndDate($dateDebutTab, intval($evt[1]));
                         $keyMonth = ($dateDebutTab[1] < 10) ? "0".$dateDebutTab[1] : $dateDebutTab[1];
                         $keyDay = ($dateDebutTab[2] < 10) ? "0".$dateDebutTab[2] : $dateDebutTab[2];
-                        $evtTab[] = array("startDate" => $dateDebutTab[0]."".$keyMonth."".$keyDay, "endDate" => $endDate, "duree" => $evt[1]);
+                        $evtTab[] = array("startDate" => $dateDebutTab[0]."".$keyMonth."".$keyDay, "endDate" => $endDate, "nbDay" => $evt[1]);
                     }
-                    asort($evtTab);
+                    //asort($evtTab);
+                    usort($evtTab, "evtComparator");
                 }
             }
         }
@@ -97,6 +98,24 @@ function calcEndDate($dateTab, $nbJour){
     $moisEnd = ($moisEnd < 10) ? "0".$moisEnd : $moisEnd;
     $jourEnd = ($jourEnd < 10) ? "0".$jourEnd : $jourEnd;
     return $anneeEnd."".$moisEnd."".$jourEnd;
+}
+
+function evtComparator2($a, $b){
+    if ($a['nbDay'] == $b['nbDay']) {
+        return 0;
+    }
+    return ($a['nbDay'] < $b['nbDay']) ? -1 : 1;
+}
+
+function evtComparator($a, $b){
+    if ($a['startDate'] == $b['startDate']) {
+        if ($a['nbDay'] < $b['nbDay']) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+    return ($a['startDate'] < $b['startDate']) ? -1 : 1;
 }
 
 main();
