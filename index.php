@@ -15,51 +15,63 @@ function main()
             if ($line == 0) {
                 $nbEvt = $buffer;
             } else {
-                $evt = explodeEvt($buffer);
-                if ($evt != false) {
-                    $evtTab[] = $evt;
+                if ($buffer != false) {
+                    $evt = explode(";", $buffer);
+                    if (sizeof($evt) > 1) {
+                        $dateDebutExplode = explode("-", $evt[0]);
+                        $dateDebutTab[0] = intval($dateDebutExplode[0]);
+                        $dateDebutTab[1] = intval($dateDebutExplode[1]);
+                        $dateDebutTab[2] = intval($dateDebutExplode[2]);
+                        $dateDebutEvt= $evt[0];
+                        $endDate = calcEndDate($dateDebutTab, intval($evt[1]));
+                        $keyMonth = ($dateDebutTab[1] < 10) ? "0".$dateDebutTab[1] : $dateDebutTab[1];
+                        $keyDay = ($dateDebutTab[2] < 10) ? "0".$dateDebutTab[2] : $dateDebutTab[2];
+                        $evtTab[] = array("startDate" => $dateDebutTab[0]."".$keyMonth."".$keyDay, "endDate" => $endDate, "duree" => $evt[1]);
+                    }
+                    asort($evtTab);
+                }
+            }
+        }
+        // Evt count
+        $nbEvt = 0;
+        $currentDate = "";
+        if (sizeof($evtTab) > 0) {
+            foreach ($evtTab as $key => $evt) {
+                if ($currentDate == "") {
+                    $currentDate = $evt["endDate"];
+                } else {
+                    if ($currentDate < $evt['startDate']) {
+                        $currentDate = $evt['startDate'];
+                        $nbEvt++;
+                    }
                 }
             }
         }
     }
-    
+
     echo '<pre>';
-    var_dump($evtTab);
+    print_r($evtTab);
     echo '</pre>';
+
+    var_dump($nbEvt);
 	
-    fwrite($stdout, "coucou");
+    fwrite($stdout, $nbEvt);
     
 	fclose($stdout);
 	fclose($stdin);
-}
-
-function explodeEvt($evt) {
-    $evtTab = array();
-    $evt = explode(";", $evt);
-    if (sizeof($evt) > 1) {
-        $dateDebutExplode = explode("-", $evt[0]);
-        $dateDebutTab[0] = intval($dateDebutExplode[0]);
-        $dateDebutTab[1] = intval($dateDebutExplode[1]);
-        $dateDebutTab[2] = intval($dateDebutExplode[2]);
-        $dateDebutEvt= $evt[0];
-        $endDateTab = calcEndDate($dateDebutTab, intval($evt[1]));
-        return array("startDate" => $dateDebutTab, "endDate" => $endDateTab, $evt[1]);
-    }
-    return false;
 }
 
 function calcEndDate($dateTab, $nbJour){
     $anneeStart = $dateTab[0];
     $moisStart = $dateTab[1];
     $jourStart = $dateTab[2];
-    echo "Debut: ".$jourStart."/".$moisStart."/".$anneeStart."<br/>";
     // Init End Date
     $jourEnd = $jourStart;
     $moisEnd = $moisStart;
     $anneeEnd = $anneeStart;
 
     // remove one day
-    //$nbJour = intval($nbJour)-1;
+    $nbJour = intval($nbJour)-1;
 
     while($nbJour > 0){
         $dayInMonth = cal_days_in_month(CAL_GREGORIAN, $moisEnd, $anneeEnd);
@@ -81,11 +93,10 @@ function calcEndDate($dateTab, $nbJour){
         }
     }
 
-    $endDateTab[0] = $anneeEnd;
-    $endDateTab[1] = $moisEnd;
-    $endDateTab[2] = $jourEnd;
-    echo "Fin:   ".$jourEnd."/".$moisEnd."/".$anneeEnd."<br/>";
-    return $endDateTab;
+    $anneeEnd = $anneeEnd;
+    $moisEnd = ($moisEnd < 10) ? "0".$moisEnd : $moisEnd;
+    $jourEnd = ($jourEnd < 10) ? "0".$jourEnd : $jourEnd;
+    return $anneeEnd."".$moisEnd."".$jourEnd;
 }
 
 main();

@@ -1,0 +1,437 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"info",
+				"infoFichier"
+			],
+			[
+				"scan",
+				"scanDossier"
+			],
+			[
+				"Art",
+				"ArticleType"
+			],
+			[
+				"set",
+				"setCreated  (function)"
+			],
+			[
+				"S",
+				"Symfony  (namespace)"
+			],
+			[
+				"Blog",
+				"BlogBundle"
+			],
+			[
+				"Blo",
+				"BlogBundle"
+			],
+			[
+				"Blogger",
+				"Blogger\\BlogBundle\\Entity\\Contact  (class)"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"re",
+				"getRequest  (function)"
+			],
+			[
+				"crea",
+				"createFormBuilder  (function)"
+			],
+			[
+				"isn",
+				"is_null"
+			],
+			[
+				"new",
+				"newType"
+			],
+			[
+				"colo",
+				"colonneName"
+			],
+			[
+				"table",
+				"tableName"
+			],
+			[
+				"tabe",
+				"tableName"
+			],
+			[
+				"inclu",
+				"include_once"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2353,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 115.0,
+		"selected_items":
+		[
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pdis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packag",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/DeadLox/Library/Application Support/Sublime Text 2/Packages/User/SVN.errors.log",
+		"/Volumes/web/poker/classementBis.php",
+		"/Volumes/web/poker/admin/gestion_classementBis.php",
+		"/Volumes/web/poker/include/left_panel.php",
+		"/Volumes/web/poker/include/login.php",
+		"/Volumes/web/poker/include/banner.php",
+		"/Volumes/web/poker/class/manageDirectory.class.php",
+		"/Volumes/web/poker/css/design.css",
+		"/Volumes/web/poker/admin/ajax_classement.php",
+		"/Volumes/web/poker/include/header.php",
+		"/Volumes/web/poker/classement.php",
+		"/Volumes/web/poker/class/userManager.class.php",
+		"/Volumes/web/poker/admin/gestion_utilisateur.php",
+		"/Volumes/web/poker/admin/ajax_user_search.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/public/css/unicorn.login.css",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/public/js/unicorn.login.js",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Resources/translations/messages.fr.yml",
+		"/Applications/MAMP/htdocs/BCMS/app/Resources/public/css/test.css",
+		"/Applications/MAMP/htdocs/BCMS/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Controller/SecurityController.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/public/css/bootstrap.css",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/public/css/bootstrap.min.css",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Resources/config/routing.yml",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Resources/views/layout.html.twig",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Controller/BaseController.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Resources/views/login/login.html.twig",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/config/routing.yml",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Controller/LoginController.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/views/base/home.html.twig",
+		"/Applications/MAMP/htdocs/BCMS/app/config/parameters.yml",
+		"/Applications/MAMP/htdocs/BCMS/web/app_dev.php",
+		"/Applications/MAMP/htdocs/BCMS/web/app.php",
+		"/Applications/MAMP/htdocs/BCMS/web/config.php",
+		"/Applications/MAMP/htdocs/BCMS/app/config/security.yml",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/Entity/User.php",
+		"/Applications/MAMP/htdocs/BCMS/composer.json",
+		"/Applications/MAMP/htdocs/BCMS/app/AppKernel.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/DataFixtures/ORM/Users.php",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/UserBundle/BaseUserBundle.php",
+		"/Applications/MAMP/htdocs/BCMS/app/config/config.yml",
+		"/Applications/MAMP/htdocs/BCMS/app/config/routing.yml",
+		"/Applications/MAMP/htdocs/BCMS/app/Resources/views/base.html.twig",
+		"/Applications/MAMP/htdocs/BCMS/app/config/parameters.yml.template",
+		"/Applications/MAMP/htdocs/BCMS/app/console",
+		"/Applications/MAMP/htdocs/BCMS/src/Base/InitBundle/Resources/views/home.html.twig",
+		"/Applications/MAMP/htdocs/BCMS/app/config/routing_dev.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/Page/listContact.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/app/config/parameters.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Controller/DefaultController.php",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/config/routing.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/Page/contact.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/config/config.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Entity/Blog.php",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Entity/Contact.php",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Form/ContactType.php",
+		"/Applications/MAMP/htdocs/Symfony/app/Resources/views/base.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/layout.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Controller/PageController.php",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/app/config/routing_dev.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/Page/about.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/web/css/screen.css",
+		"/Applications/MAMP/htdocs/Symfony/src/Acme/DemoBundle/Resources/public/css/blog.css",
+		"/Applications/MAMP/htdocs/Symfony/app/config/config.yml",
+		"/Applications/MAMP/htdocs/Symfony/app/config/security.yml",
+		"/Applications/MAMP/htdocs/Symfony/src/Blogger/BlogBundle/Resources/views/Default/index.html.twig",
+		"/Applications/MAMP/htdocs/Symfony/app/console",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Applications/MAMP/htdocs/Symfony/web/config.php",
+		"/Applications/MAMP/htdocs/Symfony/web/app_dev.php",
+		"/Applications/MAMP/htdocs/Symfony/web/app.php",
+		"/Users/DeadLox/Documents/DEV/Class PHP/MyPDO.class.php",
+		"/Users/DeadLox/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/web/types/index.php",
+		"/Volumes/web/types/class/Type.class.php",
+		"/Volumes/web/types/class/BasicType.class.php",
+		"/Volumes/web/types/class/TypeUtil.class.php",
+		"/Volumes/web/types/class/Number.class.php",
+		"/Volumes/web/types/class/ITypeUnit.class.php",
+		"/Volumes/web/types/class/MyPDO.class.php",
+		"/Volumes/web/poker/class/pdo.class.php",
+		"/Volumes/web/poker/include/menu_admin.php",
+		"/Volumes/web/poker/telechargement.php",
+		"/Volumes/web/poker/news.php",
+		"/Volumes/web/poker/admin/modif_tournoi.php",
+		"/Volumes/web/poker/admin/administration.php",
+		"/Volumes/web/poker/include/autoload.php",
+		"/Volumes/web/poker/admin/gestion_classement.php",
+		"/Volumes/web/poker/admin/ajax_fichier.php",
+		"/Volumes/web/poker/admin/ajax_info_membre.php",
+		"/Volumes/web/poker/admin/ajax_timer.php",
+		"/Volumes/web/poker/admin/ajouter_news.php",
+		"/Volumes/web/poker/admin/configuration_tournoi.php",
+		"/Volumes/web/poker/admin/gestion_categories.php",
+		"/Volumes/web/poker/admin/gestion_cg.php",
+		"/Volumes/web/poker/admin/gestion_forum.php",
+		"/Volumes/web/poker/admin/gestion_forums.php",
+		"/Volumes/web/poker/admin/gestion_news.php",
+		"/Volumes/web/poker/admin/gestion_presentation.php",
+		"/Volumes/web/poker/admin/gestion_telechargement.php",
+		"/Volumes/web/poker/admin/gestion_tournoi.php",
+		"/Volumes/web/poker/admin/modif_categorie.php",
+		"/Volumes/web/poker/admin/modif_forum.php",
+		"/Volumes/web/poker/admin/modif_news.php",
+		"/Volumes/web/poker/include/footer.php",
+		"/Volumes/web/poker/activation.php",
+		"/Volumes/web/poker/calendrier.php",
+		"/Volumes/web/poker/compte.php",
+		"/Volumes/web/poker/contact.php",
+		"/Volumes/web/poker/forum.php",
+		"/Volumes/web/poker/index.php",
+		"/Volumes/web/poker/memberList.php",
+		"/Volumes/web/poker/new_post.php",
+		"/Volumes/web/poker/new_topic.php",
+		"/Volumes/web/poker/plus.php",
+		"/Volumes/web/poker/presentation.php",
+		"/Volumes/web/poker/statistique.php",
+		"/Volumes/web/poker/timer.php",
+		"/Volumes/web/poker/voirforum.php",
+		"/Volumes/web/poker/voirtopic.php",
+		"/Volumes/web/poker/class/autoload.php",
+		"/Volumes/web/poker/class/Test.class.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"src",
+			"/img/",
+			"5",
+			"\"></",
+			"img/",
+			"img",
+			"manager"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"src",
+			"/images/",
+			"5",
+			"images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 2353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 428.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 375.0,
+	"status_bar_visible": true
+}
