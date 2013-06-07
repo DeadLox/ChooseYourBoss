@@ -37,25 +37,56 @@ function explodeEvt($evt) {
     $evtTab = array();
     $evt = explode(";", $evt);
     if (sizeof($evt) > 1) {
-        $dateDebutTab = explode("-", $evt[0]);
-        //$dateDebutEvt= str_replace("-", "", $evt[0]);
+        $dateDebutExplode = explode("-", $evt[0]);
+        $dateDebutTab[0] = intval($dateDebutExplode[0]);
+        $dateDebutTab[1] = intval($dateDebutExplode[1]);
+        $dateDebutTab[2] = intval($dateDebutExplode[2]);
         $dateDebutEvt= $evt[0];
-        $nbJour = $evt[1];
-        $endDateTab = calcEndDate($dateDebutTab, $evt[1]);
-        return array("startDate" => $dateDebutTab, "endDate" => $endDateTab, $nbJour);
+        $endDateTab = calcEndDate($dateDebutTab, intval($evt[1]));
+        return array("startDate" => $dateDebutTab, "endDate" => $endDateTab, $evt[1]);
     }
     return false;
 }
 
 function calcEndDate($dateTab, $nbJour){
-    $endDateTab = $dateTab;
-    $anneStart = $dateTab[0];
+    $anneeStart = $dateTab[0];
     $moisStart = $dateTab[1];
     $jourStart = $dateTab[2];
-    echo $jourStart+"/"+$moisStart+"/"+$anneStart;
-    if ($nbJour < 10) $nbJour = "0".$nbJour;
+    echo "Debut: ".$jourStart."/".$moisStart."/".$anneeStart."<br/>";
+    // Init End Date
+    $jourEnd = $jourStart;
+    $moisEnd = $moisStart;
+    $anneeEnd = $anneeStart;
+
+    // remove one day
+    //$nbJour = intval($nbJour)-1;
+
+    while($nbJour > 0){
+        $dayInMonth = cal_days_in_month(CAL_GREGORIAN, $moisEnd, $anneeEnd);
+        $dayBeforeLastMonth = $dayInMonth-$jourEnd;
+
+        // less than end of month
+        if ($dayBeforeLastMonth > 0 && $dayBeforeLastMonth-$nbJour >= 0) {
+            $jourEnd += $nbJour;
+            $nbJour = 0;
+        // More
+        } else {
+            $jourEnd = 1;
+            $moisEnd++;
+            if ($moisEnd > 12) {
+                $moisEnd = 1;
+                $anneeEnd++;
+            }
+            $nbJour -= $dayBeforeLastMonth;
+        }
+    }
+
+    $endDateTab[0] = $anneeEnd;
+    $endDateTab[1] = $moisEnd;
+    $endDateTab[2] = $jourEnd;
+    echo "Fin:   ".$jourEnd."/".$moisEnd."/".$anneeEnd."<br/>";
     return $endDateTab;
 }
-    
+
 main();
 ?>
