@@ -1,4 +1,11 @@
 <?php
+/**
+ * CHALLENGE CHOOSE YOUR BOSS
+ * 
+ * Auteur = Cyril Le borgne
+ * Email  = cyril.le-borgne@live.fr
+ * Date   = 08/06/2013
+ */
 function main()
 {
 	$stdin = fopen('listeEvt.txt', 'r');
