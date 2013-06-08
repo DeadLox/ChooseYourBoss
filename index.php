@@ -10,12 +10,15 @@ function main()
     if ($stdin) {
         $line = 0;
         while (!feof($stdin)) {
-            $line++;
             $buffer = fgets($stdin, 4096);
+            // La première ligne contient le nombre total d'évènements
             if ($line == 0) {
                 $nbEvt = $buffer;
+
             } else {
-                if ($buffer != false) {
+                // On vérifie qu'on ne dépasse pas le nombre d'évènements définit au début
+                if ($line <= $nbEvt) {
+                    // On récupère la date de début et la durée de l'évènement
                     $evt = explode(";", $buffer);
                     if (sizeof($evt) > 1) {
                         // Récupère les valeurs Année Mois Jour pour la date de début
@@ -35,13 +38,14 @@ function main()
                     usort($evtTab, "evtComparator");
                 }
             }
+            $line++;
         }
         // Evt count
         $nbEvt = 0;
         $currentDate = "";
         if (sizeof($evtTab) > 0) {
 
-            // Retire les évènements chevauchant sur plus d'un autres évènements
+            // Retire les évènements chevauchant sur plus d'un autre évènement
             $evtTab = evtFilter($evtTab);
 
             // Compte le nombre d'évènements non chevauchant 
@@ -50,7 +54,6 @@ function main()
                     $currentDate = $evt["endDate"];
                     $nbEvt++;
                 } else {
-                    echo $nbEvt." ".$currentDate." ".$evt['startDate']." = ".($currentDate < $evt['startDate'])."<br/>";
                     // Si la date de fin du premier ne chevauche pas la date de début du deuxième
                     if ($currentDate < $evt['startDate']) {
                         $currentDate = $evt['endDate'];
@@ -60,10 +63,6 @@ function main()
             }
         }
     }
-
-    echo '<pre>';
-    print_r($evtTab);
-    echo '</pre>';
 
     var_dump($nbEvt);
 	
